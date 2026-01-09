@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe - Made By Reyhan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="stars"></div>
+    
+    <main class="background">
+        <section class="title">
+            <h1 class="game-title">
+                <span class="title-x">TIC</span>
+                <span class="title-o">TAC</span>
+                <span class="title-x">TOE</span>
+            </h1>
+            <p class="subtitle">Mainkan Bersama Keroco mu</p>
+        </section>
+
+        <section class="score-board">
+            <div class="score player-x">
+                <h3>Player X</h3>
+                <p id="score-x">0</p>
+            </div>
+            <div class="score draws">
+                <h3>Seri</h3>
+                <p id="score-draw">0</p>
+            </div>
+            <div class="score player-o">
+                <h3>Player O</h3>
+                <p id="score-o">0</p>
+            </div>
+        </section>
+
+        <section class="status-board">
+            <p id="current-player" class="current-status">
+                <span class="player-turn">●</span> Player <span id="player-name">X</span> Giliran
+            </p>
+        </section>
+
+        <section class="container">
+            <div class="tile" data-index="0"></div>
+            <div class="tile" data-index="1"></div>
+            <div class="tile" data-index="2"></div>
+            <div class="tile" data-index="3"></div>
+            <div class="tile" data-index="4"></div>
+            <div class="tile" data-index="5"></div>
+            <div class="tile" data-index="6"></div>
+            <div class="tile" data-index="7"></div>
+            <div class="tile" data-index="8"></div>
+        </section>
+
+        <section class="announcer hide">
+            <div class="result-box">
+                <p id="result-text"></p>
+                <p id="result-emoji"></p>
+            </div>
+        </section>
+
+        <section class="controls">
+            <button id="reset" class="btn btn-primary">
+                <span>🔄</span> Main Ulang
+            </button>
+            <button id="reset-score" class="btn btn-secondary">
+                Reset Skor
+            </button>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
